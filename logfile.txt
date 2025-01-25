@@ -1,0 +1,2 @@
+{"input_text": "The sky is beautiful", "mission": "sentiment", "output": "Positive"}
+{"input_text": "OpenAI has told an Indian court that any order to remove training data powering its ChatGPT service would be inconsistent with its legal obligations in the United States, according to a recent filing seen by Reuters.", "mission": "named_entity", "output": "{\n    \"org\": [\"OpenAI\", \"Reuters\"],\n    \"gpe\": [\"Indian\", \"United States\"]\n}"}

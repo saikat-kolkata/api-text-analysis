@@ -1,5 +1,11 @@
+### Utility file for other modules
+
 
 def system_message_named_entity():
+    """
+        Returns:
+        (str) : Boiler plate format for named entity system prompt 
+    """
     labels = [
     "person",      # people, including fictional characters
     "org",         # organizations, companies, agencies, institutions
@@ -17,6 +23,10 @@ def system_message_named_entity():
     The possible common Named Entities (NER) types are exclusively: ({", ".join(labels)})."""
 
 def assisstant_message():
+    """
+        Returns:
+        (str) : Assistant prompt for one-shot-prompting
+    """
     return """
     EXAMPLE:
     Text: 'In Germany, in 1440, goldsmith Johannes Gutenberg invented the movable-type printing press. His work led to an information revolution and the unprecedented mass-spread / 
