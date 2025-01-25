@@ -34,7 +34,7 @@ async def process_text(payload: Dict[str, str]):
 
     Raises:
         HTTPException: If the "text" field is empty, or the "mission" field 
-                       is invalid, an appropriate HTTPException with status code 400 is raised.
+                       is invalid or empty, an appropriate HTTPException with status code 400 is raised.
 
     Details of functions:
         - For "summarize", the function calls `prompt_services.get_summerize_text` 
@@ -61,12 +61,16 @@ async def process_text(payload: Dict[str, str]):
         }
     """
     text = payload.get("text")
-    if not text or not text.strip():
-        raise HTTPException(status_code=400, detail="Text field cannot be empty.")
-
     mission = payload.get("mission")
-    result_text = ""
 
+    if not text or not text.strip():
+        raise HTTPException(status_code=400, detail="Text field cannot be empty.")   
+    if not mission:
+        raise HTTPException(status_code=400, detail="Mission field is required.")
+    
+    mission = mission.lower() # all texts will be lowered
+
+    result_text = ""
     if mission == "summarize":
         result_text = prompt_services.get_summerize_text(text)
     
