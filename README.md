@@ -22,27 +22,31 @@ This project provides a web API service built with FastAPI that performs text an
 ## Installation
 
 1. Clone the repository:
-
-git clone [<repository-url>](https://github.com/saikat-kolkata/api-text-analysis)
+```sh
+git clone https://github.com/saikat-kolkata/api-text-analysis
 cd api-text-analysis
-
+```
 ## Create and activate a virtual environment (recommended):
+```sh
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
+```
 ## Install required dependencies:
+```sh
 pip install -r requirements.txt
-
+```
 ## Usage : To run the server locally:
-
+```sh
 python main.py
-
 The server will start on http://0.0.0.0:6080
-
+```
 API Endpoints
-GET /: Root endpoint for API testing
-POST /process: Processes the input text based on the specified mission and returns the result after summerization / Entity recognition / sentiment analysis
-GET /history: Retrieve all processed text results
+| Endpoint | Remarks |
+| ------ | ------ |
+| GET / | Root endpoint for API testing |
+| POST /process | Processes the input text based on the specified mission and returns the result after summerization / Entity recognition / sentiment analysis |
+| GET /history | Retrieve all processed text results |
+
 
 
 
