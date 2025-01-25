@@ -69,6 +69,9 @@ The server will start on http://0.0.0.0:6080
 ## Output of Sentiment Analysis API request with JSON input and output in Postman
 ![sentiment](https://github.com/user-attachments/assets/f459773c-dac9-4e3b-8968-986282daaea2)
 
+## Output of history of all processed text results
+![image](https://github.com/user-attachments/assets/9701e1b9-e070-4203-9958-1d4e0220f6e5)
+
 ## Output of API handling error
 ![error](https://github.com/user-attachments/assets/2a5e6027-deec-44a5-921b-52fd06aa45fd)
 
