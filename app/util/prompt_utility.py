@@ -17,7 +17,7 @@ def system_message_named_entity():
     The possible common Named Entities (NER) types are exclusively: ({", ".join(labels)})."""
 
 def assisstant_message():
-    return f"""
+    return """
     EXAMPLE:
     Text: 'In Germany, in 1440, goldsmith Johannes Gutenberg invented the movable-type printing press. His work led to an information revolution and the unprecedented mass-spread / 
     of literature throughout Europe. Modelled on the design of the existing screw presses, a single Renaissance movable-type printing press could produce up to 3,600 pages per workday.'
